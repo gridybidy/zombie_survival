@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zombie survival</title>
+</head>
+<body>
+    <h1>Zombie survival</h1>
+
+        <a href="https://gridybidy.github.io/zombie_survival/Zombie%20survival(3).html">
+            <button type="button" style="border-radius: 5px;">Spielen</button>
+        </a>
+        <br>
+        <br>
+        <br>
+        
+        
+            <button onclick="printwords()" type="button" style="border-radius: 5px;">info</button>
+        <h3 id="on"></h3>
+        <h3 id="blub"></h3>
+        <button id="off" onclick="printwords2()" type="button" style="border-radius: 5px;"></button>
+
+        <script>
+            function printwords(){
+              document.getElementById("on").innerHTML = "WASD um sich zu bewegen. Linke maustaste/tippen um zu schiessen"
+              document.getElementById("blub").innerHTML = "Töte Gegner um Geld zu bekommen. Mit dem Geld kanst du Waffen und Amulette kaufen, die deine überlebens chance erhöhen"
+              document.getElementById("off").innerHTML = "zurück" 
+                          
+            }
+            
+            function printwords2(){
+                document.getElementById("on").innerHTML = ""
+                document.getElementById("blub").innerHTML = ""
+                document.getElementById("off").innerHTML = ""
+              
+            }
+        </script>
+
+
+</script>
+<style>
+    body {
+            height: 1500px;
+            background: linear-gradient(to bottom, #74f368 -100%, #0a5f23 100%);
+        }
+</style>
+</html>
